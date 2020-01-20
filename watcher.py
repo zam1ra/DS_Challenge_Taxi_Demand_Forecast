@@ -32,10 +32,10 @@ def compare_lines(lines_1, lines_2, prefix):
     diff = ''
     for line in lines_2:
         if line!=lines_1[cnt]:
-            diff+=' @l'+str(cnt+1)+' +- '+lines_1[cnt].rstrip()
+            diff+=' @l'+str(cnt+1)+' +-  '+ line.rstrip()+' ==> '+lines_1[cnt].rstrip()+'\n'
         cnt+=1
     while cnt<len(lines_1):
-        diff+=' @l'+str(cnt+1)+prefix+lines_1[cnt].rstrip()
+        diff+=' @l'+str(cnt+1)+prefix+lines_1[cnt].rstrip()+'\n'
         cnt+=1
     return diff
 
@@ -71,7 +71,7 @@ def getFilesList(path):
             print("File {}: {}".format(cnt, line.rstrip()))
             file_list.append(line.rstrip())
         fp.close()
-    print("-------\n")
+    print(" *** \n")
     return file_list
 
 
@@ -89,7 +89,7 @@ def check_files(filenames):
                 _cached_last_time_files[nfile] = last_modification
                 diff = compare_with_cached(nfile)
                 time_str =  time.strftime("%D %H:%M", time.localtime(last_modification))
-                print('Modified {} | time {} | diff {} '.format(nfile,time_str,diff))
+                print(' ------ \n Modified: {} \n time: {} \n diff: {} \n ----- \n '.format(nfile,time_str,diff))
                 save_in_cache(nfile)
         else:
             if nfile not in _deleted_files:
