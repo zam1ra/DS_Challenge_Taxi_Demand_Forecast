@@ -1,0 +1,2 @@
+/Users/zamira/Documents/datascience_challenge/watcher/test/file.txt
+/Users/zamira/Documents/datascience_challenge/watcher/test/file1.txt

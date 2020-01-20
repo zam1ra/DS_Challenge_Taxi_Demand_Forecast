@@ -1,2 +1,0 @@
-/Users/zamira/Documents/watcher/test/file.txt
-/Users/zamira/Documents/watcher/test/file1.txt
