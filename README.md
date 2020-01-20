@@ -6,4 +6,4 @@ This message  comprise the filename, the date of change and the diff, making it 
 #### Run
     python watcher.py list.txt
 
-    Where list.txt contains a given list of file names 
+Where list.txt contains a given list of file names 
