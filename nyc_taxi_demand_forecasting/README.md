@@ -1,8 +1,5 @@
 # New York Taxi Demand Forecast 
-
-Working with time series data is daily business for a data scientist at ENLYZE. 
-With this challenge you can show us how you approach time series data, structure your projects
-and build and evaluate models. 
+ 
 
 The objective is to forecast the demand for taxis by predicting the number of passengers in the next hour.
 
@@ -42,13 +39,7 @@ You can choose how you split your data into a training and test sets but the tes
 
 You can use the available features if you find them useful and apply additional feature engineering. 
 
- 
-## Requirements
-* Python 3 environment with jupyter notebook / jupyter lab installed
-* Use common, open-source data science libraries such as [numpy](https://www.numpy.org/), [pandas](https://pandas.pydata.org/) and [scikit-learn](https://scikit-learn.org/stable/) (or [tensorflow](https://www.tensorflow.org/)) to solve this exercise. 
-* Provide the results and documentation in one executable jupyter notebook.
-* If lesser known libraries were used, provide a requirements.txt file to quickly install them.
-
+  
 
 
 ## For some extra fun (optional)
