@@ -11,15 +11,14 @@ and additional weather data was added. The weather data was published on kaggle 
 
 ## Data
 
-You are provided with hourly NYC Yellow Cab trip record data from January 2016 to December 2017. The data was
+Given  hourly NYC Yellow Cab trip record data from January 2016 to December 2017. The data was
 originally sampled on a per-trip basis and aggregated to hourly intervals for this challenge. 
 The dataset is not cleaned and can contain invalid data points or outliers.
 
-You must predict the total count of passengers in the next hour, using only information 
+The task is to predict the total count of passengers in the next hour, using only information 
 available prior to the respective period.
 
-You can choose how you split your data into a training and test sets but the test set should be at least 
-15% of the whole dataset (make sure that you don't have any data leakage).
+
 
 ### Attributes  
 
@@ -37,12 +36,9 @@ You can choose how you split your data into a training and test sets but the tes
 * wind_direction: Wind direction measured in degrees clockwise.
 * wind_speed: Wind speed in m/s.
 
-You can use the available features if you find them useful and apply additional feature engineering. 
 
   
 
-
-## For some extra fun (optional)
 
 Use some anomaly detection methods on the label and search for unusual patterns in taxi demands.
 
